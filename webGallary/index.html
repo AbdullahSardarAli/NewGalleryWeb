@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Gallery Navbar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+  rel="stylesheet"
+/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <h1 class="navbar-title">Gallery</h1>
+    </div>
+
+    <div class="navbar-right" id="navbarRight">
+      <ul class="categories">
+        <li><a href="#all" class="category-link active" data-category="all">All</a></li>
+        <li><a href="#city" class="category-link" data-category="city">City</a></li>
+        <li><a href="#nature" class="category-link" data-category="nature">Nature</a></li>
+        <li><a href="#kids" class="category-link" data-category="kids">Kids</a></li>
+        <!-- <li><a href="#mountain" class="category-link" data-category="mountain">Mountain</a></li> -->
+        <li><a href="#animal" class="category-link" data-category="animal">Animal</a></li>
+      </ul>
+    </div>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </nav>
+
+  <!-- hero section -->
+<section class="hero-slider">
+  <div class="slides-container">
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1015/800/600');">
+      <div class="slide-text">
+        <h1>Discover Stunning Visuals</h1>
+        <p>Explore breathtaking images from around the world.</p>
+      </div>
+    </div> 
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1016/800/600');">
+      <div class="slide-text">
+        <h1>Experience Nature's Beauty</h1>
+        <p>From mountains to oceans, immerse yourself in nature.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1020/800/600');">
+      <div class="slide-text">
+        <h1>Vibrant Cityscapes</h1>
+        <p>Discover the energy and life of cities around the globe.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1024/800/600');">
+      <div class="slide-text">
+        <h1>Moments Frozen in Time</h1>
+        <p>Capture the essence of beauty with every shot.</p>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://picsum.photos/id/1033/800/600');">
+      <div class="slide-text">
+        <h1>Your Journey Begins Here</h1>
+        <p>Join us in exploring the world through imagery.</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="arrow left-arrow" aria-label="Previous Slide">&#10094;</button>
+  <button class="arrow right-arrow" aria-label="Next Slide">&#10095;</button>
+</section>
+
+  <!-- All gallery sections visible stacked -->
+  <section class="gallery-section" id="all">
+    <h2></h2>
+    <p></p>
+  </section>
+
+  <!-- city -->
+   <section class="city-gallery-section" id="city">
+  <h1 class="city-main-heading">City Gallery</h1>
+
+  <div class="city-main-image" id="cityMainImageContainer">
+    <img
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+      alt="City Image"
+      id="mainCityImage"
+    />
+  </div>
+  <div class="city-sidebar" id="citySidebar">
+    <img
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=60"
+      alt="Car in city street"
+      class="city-thumb active"
+      data-large="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+      alt="People inside a car"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1486308510493-cb4e1f5d15a5?auto=format&fit=crop&w=200&q=60"
+      alt="Street market"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1486308510493-cb4e1f5d15a5?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=200&q=60"
+      alt="Night city traffic"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=200&q=60"
+      alt="Busy street market"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=60"
+      alt="Crowd walking in city"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=200&q=60"
+      alt="Traffic jam"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=200&q=60"
+      alt="Urban bridge at sunset"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=200&q=60"
+      alt="Downtown buildings"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=200&q=60"
+      alt="Urban street scene"
+      class="city-thumb"
+      data-large="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80"
+    />
+  </div>
+</section>
+
+
+
+
+<!-- Nature Gallery -->
+
+ 
+<section class="nature-gallery-section" id="nature">
+  <h1 class="nature-main-heading">Nature Gallery</h1>
+
+  <div class="nature-main-image" id="natureMainImageContainer">
+    <img
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+      alt="Nature Image"
+      id="mainNatureImage"
+    />
+  </div>
+  <div class="nature-sidebar" id="natureSidebar">
+    <img
+      src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=60"
+      alt="Mountain"
+      class="nature-thumb active"
+      data-large="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=200&q=60"
+      alt="Forest"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1486308510493-cb4e1f5d15a5?auto=format&fit=crop&w=200&q=60"
+      alt="Waterfall"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1486308510493-cb4e1f5d15a5?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=200&q=60"
+      alt="Sunrise"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1525097487452-6278ff080c31?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=200&q=60"
+      alt="Lake"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=200&q=60"
+      alt="Meadow"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=200&q=60"
+      alt="River"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=200&q=60"
+      alt="Forest Path"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=200&q=60"
+      alt="Mountains"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900&q=80"
+    />
+    <img
+      src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=200&q=60"
+      alt="Tree"
+      class="nature-thumb"
+      data-large="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80"
+    />
+  </div>
+</section>
+
+
+
+ <!-- kids -->
+
+
+
+<section class="animal-gallery-section" id="animal">
+  <h1 class="animal-main-heading">Animal Gallery</h1>
+
+  <div class="animal-main-image" id="animalMainImageContainer">
+    <img
+      src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80"
+      alt="Animal Image"
+      id="mainAnimalImage"
+    />
+  </div>
+
+  <div class="animal-thumbs-container">
+    <button class="scroll-btn left-btn" aria-label="Scroll Left">&#10094;</button>
+    <div class="animal-sidebar" id="animalSidebar">
+      <img
+        src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 1"
+        class="animal-thumb active"
+        data-large="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80"
+      />
+      <!-- <img
+        src="	https://images.unsplash.com/photo-1504203702947-c3e50b315b10?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 2"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1504203702947-c3e50b315b10?auto=format&fit=crop&w=900&q=80"
+      /> -->
+      <img
+        src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 3"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=80"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 4"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=900&q=80"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 5"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=80"
+      />
+      <!-- <img
+        src="https://images.unsplash.com/photo-1537151674825-4a6e9a4c5a55?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 6"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1537151674825-4a6e9a4c5a55?auto=format&fit=crop&w=900&q=80"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1549887533-4b3e87dbcf88?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 7"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1549887533-4b3e87dbcf88?auto=format&fit=crop&w=900&q=80"
+      /> -->
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 8"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 9"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=200&q=60"
+        alt="Animal 10"
+        class="animal-thumb"
+        data-large="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=900&q=80"
+      />
+    </div>
+    <button class="scroll-btn right-btn" aria-label="Scroll Right">&#10095;</button>
+  </div>
+</section>
+
+
+
+ 
+
+  <!-- <section class="gallery-section" id="mountain">
+    <h2>Mountain Gallery</h2>
+    <p>Mountain images here.</p>
+  </section> -->
+
+  <!-- <section class="gallery-section" id="animal">
+    <h2>Animal Gallery</h2>
+    <div class="animal-images">
+      <img src="https://picsum.photos/id/237/200/150" alt="Animal 1" />
+      <img src="https://picsum.photos/id/433/200/150" alt="Animal 2" />
+      <img src="https://picsum.photos/id/219/200/150" alt="Animal 3" />
+      <img src="https://picsum.photos/id/1074/200/150" alt="Animal 4" />
+      <img src="https://picsum.photos/id/106/200/150" alt="Animal 5" />
+    </div>
+  </section> -->
+
+<!-- 3D image silder -->
+
+<section class="kids-gallery-section" id="kids">
+  <h2 class="kids-gallery-heading">Kids Gallery</h2>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1504203702947-c3e50b315b10?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80')"></div>
+      <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80')"></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+
+<!-- anumal seciton -->
+
+
+<section class="kenburns-gallery" id="animal">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80" alt="Image 1" class="kenburns-slide active" />
+  <img src="https://images.unsplash.com/photo-1504203702947-c3e50b315b10?auto=format&fit=crop&w=1920&q=80" alt="Image 2" class="kenburns-slide" />
+  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=1920&q=80" alt="Image 3" class="kenburns-slide" />
+  <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1920&q=80" alt="Image 4" class="kenburns-slide" />
+  <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1920&q=80" alt="Image 5" class="kenburns-slide" />
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>
